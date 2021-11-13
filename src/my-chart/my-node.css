@@ -1,0 +1,93 @@
+/* .orgchart.myChart {
+  background-image: linear-gradient(
+      90deg,
+      rgba(33, 90, 136, 0.15) 10%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    linear-gradient(rgba(33, 90, 136, 0.15) 10%, rgba(0, 0, 0, 0) 10%) !important;
+} */
+
+.orgchart.myChart > ul > li > ul li::before {
+  border-top-color: #215a88;
+}
+
+.orgchart.myChart > ul > li > ul li .oc-node::before,
+.orgchart.myChart ul li .oc-node:not(:only-child)::after {
+  background-color: #215a88;
+}
+
+
+
+.orgchart.myChart > ul > li > .oc-node.isChildrenCollapsed:not(:only-child)::after {
+  content: none!important;
+}
+
+.orgchart.myChart .oc-node .headerBlock {
+  box-sizing: border-box;
+  background-color: #215a88;
+  color: #fff;
+  width: 130px;
+  height: auto;
+  padding: 15px;
+}
+
+.orgchart.myChart .oc-node .bodyBlock {
+  box-sizing: border-box;
+  color: #215a88;
+  background-color: #fff;
+  width: 130px;
+  height: auto;
+  padding: 8px;
+  border: 1px solid #215a88;
+  border-radius: 0 0 10px 10px;
+}
+
+.withBody {
+  border-radius: 10px 10px 0 0;
+}
+
+.onlyBody {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.windowColor {
+  border: 1px solid #000; 
+  width: 20px;
+  height: 20px;
+  display: inherit; 
+  margin-top: 5px;
+  padding-bottom: 0;
+}
+
+.bodyBlock a {
+  text-decoration: none;
+  color: #000;
+}
+
+.bodyBlock a:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.amountChildren {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  border: 1px solid #000;
+}
+
+.openChildren  {
+  background-color: rgb(33, 155, 49)!important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 58px;
+  bottom: -32px;
+  border: 1px solid #000;
+  padding: 0px;
+}
