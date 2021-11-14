@@ -9,6 +9,7 @@ My actions:
 
 2. Created component "My Chart". It includes all possibilities of library orgchart.
   > Node: Drag and drop, Edit, Delete, Add new, Select
+  
   > Chart: Transform (zoom, move), Export (png, pdf)
 
 2. Added my own functionality:
