@@ -2,7 +2,7 @@
 
 React
 
-My actions: 
+> My actions: 
 
 1. Learned the library org-chart by dabeng with my data.
    https://github.com/dabeng/react-orgchart
